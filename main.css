@@ -2,6 +2,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.debug, .debug *:not(.hide-debug) {
+    background-color: rgba(0, 119, 255, 0.447);
+    border: solid 2px rgba(255, 0, 0, 0.447)
+}
+
+/* FLEX BOX LAYOUT */
+
 .column {
     display: flex;
     flex-direction: column;
@@ -11,18 +28,89 @@
     display: flex;
 }
 
-.column.center-h {
-
+.column.center-content-h, .row.center-content-v {
+    align-items: center
 }
 
-.column.center-v {
-
+.column.even-content-h,
+.row.even-content-v {
+    align-items: space-evenly
 }
 
-.row.center-h {
-    
+.column.center-content-v, .row.center-content-h {
+    justify-content: center;
+}
+.column.even-content-v,
+.row.even-content-h {
+    justify-content: space-evenly;
 }
 
-.row.center-v {
-    
+.center-content {
+    justify-content: center;
+    align-items: center
+}
+.column.fill {
+    flex: 1;
+    height: 100%;
+}
+
+.row.fill, .fill-v {
+   height: 100%;
+}
+
+.fill-h {
+    flex: 1;
+}
+
+.column.fill-h-2{
+    flex: 2
+}
+
+.row.fill-h-2 {
+    height: 150%
+}
+
+.column.fill-h-3 {
+    flex: 3
+}
+
+.row.fill-h-3 {
+    height: 175%
+}
+
+/* LINKS */
+
+a {
+    text-decoration: none;
+    color: rgb(0, 123, 255)
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    padding: .3rem .5rem;
+    border-radius: .25rem;
+    background-color: lightgrey;
+    color: rgb(34,34,34)
+}
+
+button.primary {
+    background-color: rgb(0, 123, 255);
+    color: white
+}
+
+button.secondary {
+    background-color: rgb(76 179 76);
+    color: white
+}
+
+button.danger {
+    background-color: tomato;
+    color: white
+}
+
+button:disabled {
+    cursor: default;
+    background-color: lightgrey;
+    color: white
 }
