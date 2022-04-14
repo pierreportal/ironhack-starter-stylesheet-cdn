@@ -6,4 +6,4 @@
 
 🏗 Open to the PT-11-2021 Ironhack student for contribution
 
-👉 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pierreportal/stylesheet-cdn/main.css">`
+👉 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/pierreportal/stylesheet-cdn@latest/main.css">`
