@@ -1,9 +1,23 @@
+:root {
+    --main-bg-color: white;
+    --primary-btn-bg: rgb(0, 123, 255);
+    --secondary-btn-bg: rgb(76 179 76);
+    --danger-btn-bg: tomato;
+    --light-grey: lightgrey;
+    --dark-grey: rgb(34,34,34);
+    --link-text-color: rgb(0, 123, 255);
+    /*  */
+    --btn-inner-padding: .3rem .5rem;
+    --btn-border-radsius: .25rem;
+}
+
 * {
     box-sizing: border-box;
 }
 
 html {
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 body {
@@ -82,35 +96,35 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(0, 123, 255)
+    color: var(--link-text-color)
 }
 
 button {
     cursor: pointer;
     border: none;
-    padding: .3rem .5rem;
-    border-radius: .25rem;
-    background-color: lightgrey;
-    color: rgb(34,34,34)
+    padding: var(--btn-inner-padding);
+    border-radius: var(--btn-border-radsius);
+    background-color: var(--light-grey);
+    color: var(--dark-grey);
 }
 
 button.primary {
-    background-color: rgb(0, 123, 255);
+    background-color: var(--primary-btn-bg);
     color: white
 }
 
 button.secondary {
-    background-color: rgb(76 179 76);
+    background-color: var(--secondary-btn-bg);
     color: white
 }
 
 button.danger {
-    background-color: tomato;
+    background-color: var(--danger-btn-bg);
     color: white
 }
 
 button:disabled {
     cursor: default;
-    background-color: lightgrey;
+    background-color: var(--light-grey);
     color: white
 }
